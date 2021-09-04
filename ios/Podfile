@@ -23,7 +23,14 @@ target 'ReanimatedRecipes' do
   # you should disable the next line.
   use_flipper!()
 
+  # post_install do |installer|
+  #   react_native_post_install(installer)
+  # end
   post_install do |installer|
-    react_native_post_install(installer)
+    installer.pods_project.targets.each do |target|
+          target.build_configurations.each do |config|
+              config.build_settings['OTHER_CPLUSPLUSFLAGS'] = '-DDONT_AUTOINSTALL_REANIMATED'
+          end
+    end
   end
 end
