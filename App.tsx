@@ -1,14 +1,22 @@
-import React from 'react';
-import {SafeAreaView, StatusBar, Text} from 'react-native';
+import React, { ReactNode } from "react";
+import { StatusBar, StyleSheet, Text } from "react-native";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
-const App = () => {
+function App(): ReactNode {
   return (
-    <SafeAreaView
-      style={[{flex: 1, alignItems: 'center', justifyContent: 'center'}]}>
-      <StatusBar barStyle={'dark-content'} />
+    <SafeAreaProvider style={styles.rootContainer}>
+      <StatusBar barStyle={"dark-content"} />
       <Text>Hi reanimated 2</Text>
-    </SafeAreaView>
+    </SafeAreaProvider>
   );
-};
+}
+
+const styles = StyleSheet.create({
+  rootContainer: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});
 
 export default App;
