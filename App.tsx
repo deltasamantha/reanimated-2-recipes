@@ -1,22 +1,15 @@
 import React, { ReactNode } from "react";
-import { StatusBar, StyleSheet, Text } from "react-native";
+import { StatusBar } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
+import RootNavigator from "./src/navigation/RootNavigator";
 
 function App(): ReactNode {
   return (
-    <SafeAreaProvider style={styles.rootContainer}>
+    <SafeAreaProvider>
       <StatusBar barStyle={"dark-content"} />
-      <Text>Hi reanimated 2</Text>
+      <RootNavigator />
     </SafeAreaProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  rootContainer: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
 
 export default App;
