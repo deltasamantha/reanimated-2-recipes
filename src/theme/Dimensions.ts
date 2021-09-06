@@ -1,5 +1,7 @@
 export const BORDER_HEIGHT = 1;
 
+export const BORDER_RADIUS = 10;
+
 export const SPACING_XS = 4;
 export const SPACING_S = 10;
 export const SPACING_XM = 15;
