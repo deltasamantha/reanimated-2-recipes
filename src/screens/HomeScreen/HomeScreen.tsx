@@ -22,6 +22,12 @@ const HomeScreen: React.FC = () => {
         case "pan-gesture":
           navigation.navigate("PanGesture");
           break;
+        case "transition":
+          navigation.navigate("Transition");
+          break;
+        case "card":
+          navigation.navigate("Card");
+          break;
         default:
           navigation.navigate("Home");
           break;
