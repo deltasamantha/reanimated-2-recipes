@@ -5,4 +5,5 @@ export const mainItems: Array<MainItem> = [
   { type: "pan-gesture", title: "Pan Gesture Handler" },
   { type: "transition", title: "Transitions" },
   { type: "card", title: "Card" },
+  { type: "drag-card", title: "Drag Card" },
 ];
