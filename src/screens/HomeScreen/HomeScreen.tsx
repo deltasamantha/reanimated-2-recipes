@@ -34,6 +34,9 @@ const HomeScreen: React.FC = () => {
         case "transition-new":
           navigation.navigate("TransitionNew");
           break;
+        case "hoc":
+          navigation.navigate("HigherOrder");
+          break;
         default:
           navigation.navigate("Home");
           break;

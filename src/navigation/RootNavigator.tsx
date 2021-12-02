@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from "react";
 import CardScreen from "../screens/CardScreen/CardScreen";
 import DragCard from "../screens/DragCard/DragCard";
+import HigherOrderAnimationsScreen from "../screens/HigherOrderAnimationsScreen/HigherOrderAnimationsScreen";
 import HomeScreen from "../screens/HomeScreen/HomeScreen";
 import OverViewScreen from "../screens/OverViewScreen/OverViewScreen";
 import PanGestureScreen from "../screens/PanGestureScreen/PanGestureScreen";
@@ -18,6 +19,7 @@ export type RootStackParamList = {
   Card: undefined;
   DragCard: undefined;
   TransitionNew: undefined;
+  HigherOrder: undefined;
 };
 
 const RootStack = createNativeStackNavigator<RootStackParamList>();
@@ -39,6 +41,7 @@ const RootNavigator: React.FC = () => {
         <RootStack.Screen name="Card" component={CardScreen} />
         <RootStack.Screen name="DragCard" component={DragCard} />
         <RootStack.Screen name="TransitionNew" component={TransitionsNewScreen} />
+        <RootStack.Screen name="HigherOrder" component={HigherOrderAnimationsScreen} />
       </RootStack.Navigator>
     </NavigationContainer>
   );

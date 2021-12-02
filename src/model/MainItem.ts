@@ -4,7 +4,8 @@ export type ItemType =
   | "transition"
   | "card"
   | "drag-card"
-  | "transition-new";
+  | "transition-new"
+  | "hoc";
 
 export interface MainItem {
   type: ItemType;
