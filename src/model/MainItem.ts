@@ -5,7 +5,8 @@ export type ItemType =
   | "card"
   | "drag-card"
   | "transition-new"
-  | "hoc";
+  | "hoc"
+  | "circle-progress";
 
 export interface MainItem {
   type: ItemType;

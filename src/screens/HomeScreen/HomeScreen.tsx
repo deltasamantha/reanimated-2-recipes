@@ -37,6 +37,9 @@ const HomeScreen: React.FC = () => {
         case "hoc":
           navigation.navigate("HigherOrder");
           break;
+        case "circle-progress":
+          navigation.navigate("CircleProgress");
+          break;
         default:
           navigation.navigate("Home");
           break;
