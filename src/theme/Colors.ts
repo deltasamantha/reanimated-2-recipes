@@ -9,4 +9,8 @@ export const colors = {
   textColorPrimary: "#FFF8E5",
   textColorAccent: "#152D35",
   colorBackGround: "#E8F6EF",
+  colorCard1: "#105652",
+  colorCard2: "#F3950D",
+  colorCard3: "#B000B9",
+  colorCardSign: "#FFF9B6",
 };
