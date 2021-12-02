@@ -2,10 +2,13 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from "react";
 import CardScreen from "../screens/CardScreen/CardScreen";
+import CircleProgress from "../screens/CircleProgress/CircleProgress";
 import DragCard from "../screens/DragCard/DragCard";
+import HigherOrderAnimationsScreen from "../screens/HigherOrderAnimationsScreen/HigherOrderAnimationsScreen";
 import HomeScreen from "../screens/HomeScreen/HomeScreen";
 import OverViewScreen from "../screens/OverViewScreen/OverViewScreen";
 import PanGestureScreen from "../screens/PanGestureScreen/PanGestureScreen";
+import TransitionsNewScreen from "../screens/TransitionsNewScreen/TransitionsNewScreen";
 import TransitionsScreen from "../screens/TransitionsScreen/TransitionsScreen";
 import { colors } from "../theme/Colors";
 
@@ -16,6 +19,9 @@ export type RootStackParamList = {
   Transition: undefined;
   Card: undefined;
   DragCard: undefined;
+  TransitionNew: undefined;
+  HigherOrder: undefined;
+  CircleProgress: undefined;
 };
 
 const RootStack = createNativeStackNavigator<RootStackParamList>();
@@ -36,6 +42,9 @@ const RootNavigator: React.FC = () => {
         <RootStack.Screen name="Transition" component={TransitionsScreen} />
         <RootStack.Screen name="Card" component={CardScreen} />
         <RootStack.Screen name="DragCard" component={DragCard} />
+        <RootStack.Screen name="TransitionNew" component={TransitionsNewScreen} />
+        <RootStack.Screen name="HigherOrder" component={HigherOrderAnimationsScreen} />
+        <RootStack.Screen name="CircleProgress" component={CircleProgress} />
       </RootStack.Navigator>
     </NavigationContainer>
   );

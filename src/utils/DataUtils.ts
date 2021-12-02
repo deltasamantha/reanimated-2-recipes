@@ -6,4 +6,7 @@ export const mainItems: Array<MainItem> = [
   { type: "transition", title: "Transitions" },
   { type: "card", title: "Card" },
   { type: "drag-card", title: "Drag Card" },
+  { type: "transition-new", title: "Transitions New" },
+  { type: "hoc", title: "Higher order" },
+  { type: "circle-progress", title: "Circle progress" },
 ];

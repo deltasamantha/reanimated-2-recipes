@@ -31,6 +31,15 @@ const HomeScreen: React.FC = () => {
         case "drag-card":
           navigation.navigate("DragCard");
           break;
+        case "transition-new":
+          navigation.navigate("TransitionNew");
+          break;
+        case "hoc":
+          navigation.navigate("HigherOrder");
+          break;
+        case "circle-progress":
+          navigation.navigate("CircleProgress");
+          break;
         default:
           navigation.navigate("Home");
           break;
