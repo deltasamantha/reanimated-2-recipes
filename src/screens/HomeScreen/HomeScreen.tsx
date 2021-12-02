@@ -31,6 +31,9 @@ const HomeScreen: React.FC = () => {
         case "drag-card":
           navigation.navigate("DragCard");
           break;
+        case "transition-new":
+          navigation.navigate("TransitionNew");
+          break;
         default:
           navigation.navigate("Home");
           break;

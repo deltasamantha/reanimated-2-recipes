@@ -6,6 +6,7 @@ import DragCard from "../screens/DragCard/DragCard";
 import HomeScreen from "../screens/HomeScreen/HomeScreen";
 import OverViewScreen from "../screens/OverViewScreen/OverViewScreen";
 import PanGestureScreen from "../screens/PanGestureScreen/PanGestureScreen";
+import TransitionsNewScreen from "../screens/TransitionsNewScreen/TransitionsNewScreen";
 import TransitionsScreen from "../screens/TransitionsScreen/TransitionsScreen";
 import { colors } from "../theme/Colors";
 
@@ -16,6 +17,7 @@ export type RootStackParamList = {
   Transition: undefined;
   Card: undefined;
   DragCard: undefined;
+  TransitionNew: undefined;
 };
 
 const RootStack = createNativeStackNavigator<RootStackParamList>();
@@ -36,6 +38,7 @@ const RootNavigator: React.FC = () => {
         <RootStack.Screen name="Transition" component={TransitionsScreen} />
         <RootStack.Screen name="Card" component={CardScreen} />
         <RootStack.Screen name="DragCard" component={DragCard} />
+        <RootStack.Screen name="TransitionNew" component={TransitionsNewScreen} />
       </RootStack.Navigator>
     </NavigationContainer>
   );
